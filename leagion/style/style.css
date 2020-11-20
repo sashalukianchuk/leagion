@@ -1,0 +1,469 @@
+
+
+:root {
+    --title-font-family: 'Montserrat', sans-serif;
+    --main-font-family: 'Libre Franklin', sans-serif;
+    --main-font-color: #ffffff;
+    --red-color: #EA0823;
+    --transparent: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0; }
+
+.wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: 100vh; }
+    
+    
+body {
+    overflow-x: hidden; }
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.info{
+    font-family: var(--title-font-family);
+    color: var(--main-font-color);
+}
+
+.info_redtitle{
+    font-size: 15px;
+    color: var(--red-color);
+    margin: 20px 0;
+}
+
+.info_title{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.info_text, .info_list{
+    font-size: 18px;
+    line-height: 150%;
+    margin: 45px 0;
+    font-family: var(--main-font-family);
+}
+
+button{
+    width: 300px;
+    height: 50px;
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 3px solid var(--red-color);
+    background-color: var(--transparent);
+}
+
+button:hover{
+    background-color: var(--red-color);
+}
+
+button:disabled,
+button[disabled]{
+  border: 3px solid rgba(255,255,255,5%);
+  background-color: var(--transparent);
+  color:  rgba(255,255,255,5%);
+}
+
+/* first slide_____________________________________ */
+
+#section0 .container{
+    background-image: url("../img/Backingimage.png"), linear-gradient(90deg,rgb(39,56,153),rgb(73,109,211));
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 70px;
+}
+
+header img{
+    padding: 0 15px ;
+}
+
+.menu_top {
+    display: flex;
+    justify-content: center; }
+    
+
+.menu__item {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding: 16px 20px;
+    list-style-type: none;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+}
+
+.menu__item a:hover{
+    border-bottom: 1px solid var(--red-color);
+    padding-bottom: 7px;
+}
+
+    
+#section0 .info_logo{
+    width: 220px;
+    height: 227px;
+}
+
+#section0 .info{
+    width: 1208px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: var(--title-font-family);
+    color: var(--main-font-color);
+    margin-top: 7%;
+}
+
+#section0 .logo{
+    background-image: url("../img/logo.png");
+    width: 170px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#section0 .info_logo{
+    background-image: url("../img/leagiON_logo3.png");
+    width: 220px;
+    height: 228px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#section0 .info_title{
+    width: 100%;
+    font-size: 66px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#section0 .info_text{
+    font-size: 24px;
+    font-family: var(--main-font-family);
+    text-align: center;
+    line-height: 150%;
+    width: 1154px;
+}
+
+
+.firstbutton{
+    width: 360px;
+    height: 60px;
+}
+
+
+/* second slide___________________________________________ */
+
+#section1 .container{
+    background: rgb(32, 32, 32); 
+    background-image: url("../img/leagiON_logo2.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    align-items: center;
+}
+
+#section1 .app{
+    background: url("../img/appppp1.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 4%;
+}
+
+#section1 .info{
+    display: inline-block;
+    transform: translate(230px, 0px);
+    width: 710px;
+}
+
+.secondbutton{
+    font-size: 16px;
+    width: 300px;
+    height: 50px;
+}
+
+
+/* third slide__________________________________________ */
+
+#section2 .container{
+    background-image: url("../img/shutterstock_6632184461.png");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#section2 .info{
+    width: 562px;
+    height: fit-content;
+    margin-right: 20%;
+}
+
+#section2 .info_title{
+    width: 490px;
+}
+
+#section2 .first{
+    margin-bottom: 20px;
+    width: 540px;
+}
+
+/* fouth slide__________________________________________ */
+#section3 .container{
+    background-image: url("../img/shutterstock_663218446.png");
+    display: flex;
+    align-items: center;
+}
+
+#section3 .info{
+    width: 540px;
+    margin-left: 10%;
+}
+
+#section3 .info_title{
+    width: 500px;
+}
+#section3 .info_list{
+    width: 525px;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+#section3 .info_list p{
+    font-weight: bold;
+}
+#section3 ul{
+    list-style: none;
+}
+
+#section3 ul li::before {
+    content: "\25A0"; 
+    color: var(--red-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; 
+  }
+
+/* fifth slide_________________________________________ */
+
+#section4 .container{
+    background-color: #1B1B1F;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#section4 .info{
+    text-align: center;
+}
+
+#section4 .info_title{
+    margin-bottom: 50px;
+}
+
+#section4 .info_photo{
+    display: flex; 
+}
+
+#section4 .member{
+    width: 340px;
+    height: 480px;
+    margin: 0 15px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#section4 .member.first{
+    background-image: url("../img/portraitAD-225x3001.png");
+}
+
+#section4 .member.second{
+    background-image: url("../img/portraitBN-225x300.png")
+}
+
+#section4 .member.third{
+    background-image: url("../img/Sven1.png")
+}
+
+#section4 .member.fouth{
+    background-image: url("../img/Tatiana2.png")
+}
+
+#section4 .member button,
+#section4 .member p{
+    margin: 0 0 8% 10%;
+    font-family: var(--main-font-family);
+}
+
+#section4 .member button{
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    display: none;
+}
+
+#section4 .member p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#section4 .member:hover button{
+    display: block;
+}
+
+/* sixth slide___________________________________________ */
+
+#section5 .container{
+    background-color: #1B1B1F;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+#section5 .info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section5 .info_text{
+    margin: 25px;
+    font-size: 24px;
+}
+
+#section5 .info_photo{
+    display: flex; 
+    flex-direction: column;
+    width: 1100px;
+    margin-top: 50px;
+}
+
+#section5 .block{
+    display: flex;
+    text-align: start;
+    align-items: center;
+    line-height: 150%;
+    margin: 20px 0;
+}
+
+#section5 .partner{
+    width: 320px;
+    height: 87px;
+    margin-right: 165px;
+    flex: 0 0 auto;
+    background-repeat: no-repeat;
+}
+
+#section5 .info_photo .first .partner{
+    background-image: url("../img/SportLogo20131.png");
+
+}
+
+#section5 .info_photo .second .partner{
+    background-image: url("../img/leadAcademy.png");
+}
+
+#section5 .info_photo .third .partner{
+    background-image: url("../img/blackstone.png");
+}
+
+#section5 .info_photo .fouth .partner{
+    background-image: url("../img/lembergLogo.png");
+}
+
+footer{
+    background: #000000;
+    display: inline;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 70px;
+    width: 100%;
+    /* height: 200px; */
+    position: absolute;
+    bottom: 0;
+}
+
+.footervisible{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+
+.footervisible ul{
+    display: flex;
+}
+
+.footervisible .social__item{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.footervisible .fb{
+    background-image: url("../img/facebook.png");
+}
+
+.footervisible .tw{
+    background-image: url("../img/twitter.png");
+}
+
+.footervisible .inst{
+    background-image: url("../img/instagram.png");
+}
+
+.footerinvisible{
+    padding: 25px 0 10px;
+    margin: 0 50px;
+    border-top: 2px solid rgba(255,255,255,20%);
+    display:none;
+}
+
+.footerinvisible a{
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+    text-decoration: none;
+}
+
+.footerinvisible .second{
+    margin-left: 69%;
+}
+
+footer:hover .footervisible{
+    margin: 50px 50px;
+}
+
+footer:hover .footerinvisible{
+    display: block;
+}

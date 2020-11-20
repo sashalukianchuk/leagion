@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Leagion</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/fullpage.css">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/fullpage.js"></script>
+    <script type="text/javascript" src="scripts/scrolloverflow.min.js"></script>
+</head>
+
+<script type="text/javascript">
+    var doFullpage = document.documentElement.clientWidth;
+    jQuery(document).ready(function ($) {
+        if (doFullpage > 768) {
+            $('#fullpage').fullpage({
+                navigation: true,
+                navigationPosition: 'left'
+            });
+        }
+    })
+</script>
+
+<body>
+    <div class="wrap">
+        <div id="fullpage">
+            <main>
+                <div class="section" id="section0">
+                    <div class="container">
+                        <header>
+                            <div class="logo"></div>
+                            <ul class="menu_top">
+                                <li class="menu__item"><a href="#">HOME</a></li>
+                                <li class="menu__item"><a href="#">ABOUT</a></li>
+                                <li class="menu__item"><a href="#">THE TEAM</a></li>
+                                <li class="menu__item"><a href="#">JOBS</a></li>
+                                <li class="menu__item"><a href="#">CONTACT</a></li>
+                            </ul>
+                        </header>
+                        <div class="info">
+                            <!-- <img class="info_logo" src="./img/leagiON_logo3.png" alt=""> -->
+                            <div class="info_logo"></div>
+                            <div class="info_title">Helping casual gamers to compete</div>
+                            <div class="info_text">If you are a gamer and you would like to challenge your friends, then
+                                stay tuned. Soon we will launch an <br> app that brings you to a new level of gaming
+                                experience.</div>
+                            <button class="firstbutton">notify me</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section" id="section1">
+                    <div class="container">
+                        <div class="info">
+                            <div class="info_redtitle">LEAGION GAMER APP</div>
+                            <div class="info_title">With the LeagiON gamer app you can challenge your friends on Xbox
+                            </div>
+                            <div class="info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                sagittis lectus a condimentum ullamcorper. Pellentesque efficitur consequat metus, ut
+                                blandit augue tempus et. Mauris sit amet laoreet lorem. Phasellus ac euismod orci.
+                                Pellentesque massa magna, interdum quis purus consectetur, hendrerit posuere velit. Nam
+                                fringilla quam ipsum, non sodales.</div>
+                            <button disabled class="secondbutton">available soon</button>
+                        </div>
+                        <div class="app"></div>
+                    </div>
+                </div>
+
+
+                <div class="section" id="section2">
+                    <div class="container">
+                        <div class="info">
+                            <div class="info_redtitle">ABOUT</div>
+                            <div class="info_title">LeagiON is a small start&#8209;up which revolutionises the casual
+                                gamer experience</div>
+                            <div class="info_text">
+                                <p class="first">Quisque porta aliquam molestie. Praesent dapibus varius neque nec
+                                    pretium. Aenean nec nunc non urna consequat imperdiet. Mauris ut libero fermentum,
+                                    semper nisl at, porttitor nisl. Etiam convallis gravida elit ut euismod. Maecenas ac
+                                    odio enim. Cras suscipit felis nec vulputate ornare.</p>
+                                <p class="second">Donec aliquam orci accumsan dolor aliquam, ut ultrices nibh cursus.
+                                    Donec leo eros, fermentum vel nisl ut, tempus vehicula tortor. Nam quis quam a leo
+                                    tincidunt pharetra at id mauris. Nunc sed facilisis tortor.</p>
+                            </div>
+                            <button class="thirdbutton">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section" id="section3">
+                    <div class="container">
+                        <div class="info">
+                            <div class="info_redtitle">JOBS</div>
+                            <div class="info_title">Would you like to be part of young startup and change the world of
+                                online games?</div>
+                            <div class="info_text">Then please join us and help us developing a LeagiON universe to
+                                support gamers and let them challenge each other.</div>
+                            <ul class="info_list">
+                                <p>What you’ll do:</p>
+                                <li class="list__item">Design and develop a distributed gaming system (DGS) as part of
+                                    an international team</li>
+                                <li class="list__item">Produce high quality, efficient and maintainable code in
+                                    Java/Flutter</li>
+                                <li class="list__item">Optimize UX/U</li>
+                                <li class="list__item">Develop back-end and front-end of the DGS, ready to be run in
+                                    cloud</li>
+                                <li class="list__item">Work with our continuous integration and deployment systemT</li>
+                            </ul>
+                            <button class="thirdbutton">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section" id="section4">
+                    <div class="container">
+                        <div class="info">
+                            <div class="info_redtitle">THE TEAM</div>
+                            <div class="info_title">The team behind LeagiON</div>
+                            <div class="info_photo">
+                                <div class="member first">
+                                    <p>Alex Diner<br>CEO</p>
+                                    <button>READ MORE</button>
+                                </div>
+                                <div class="member second">
+                                    <p>Brett Nasello<br>CFO</p>
+                                    <button>READ MORE</button>
+                                </div>
+                                <div class="member third">
+                                    <p>Sven Baselau<br>CTO</p>
+                                    <button>READ MORE</button>
+                                </div>
+                                <div class="member fouth">
+                                    <p>Tetiana Kot<br>COO</p>
+                                    <button>READ MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section" id="section5">
+                    <div class="container">
+                        <div class="info">
+                            <div class="info_redtitle">PARTNERS</div>
+                            <div class="info_title">These are the leagiON founders.</div>
+                            <div class="info_text">We have been friends for over 20 years, met at the MBA program and
+                                have been friends ever since. </div>
+                            <div class="info_photo">
+                                <div class="block first">
+                                    <div class="partner"></div>
+                                    <p>SPORT1 is Germany’s largest digital sports channel. They are one of the pioneers
+                                        in bringing esports to mass media. SPORT1 is one of our earliest investors.</p>
+                                </div>
+                                <div class="block second">
+                                    <div class="partner"></div>
+                                    <p>The Adi Dassler family and their circle of trusted investors and mentors. One of
+                                        the biggest names in the sports tech space.</p>
+                                </div>
+                                <div class="block third">
+                                    <div class="partner"></div>
+                                    <p>Blackstone Law Group has emerged as a leader with regard to blockchain
+                                        technologies, and the launch, use, and regulation of cryptocurrencies in the
+                                        United States and abroad.</p>
+                                </div>
+                                <div class="block fouth">
+                                    <div class="partner"></div>
+                                    <p>Lemberg Solutions has been our technical consulting and engineering partner from
+                                        very early on. Their core competencies in machine learning and AI technology
+                                        played a key role in developing our innovative solution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <footer>
+                            <div class="footervisible">
+                                <img src="./img/logo.png" alt="">
+                                <ul class="menu_top">
+                                    <li class="menu__item"><a href="#">HOME</a></li>
+                                    <li class="menu__item"><a href="#">ABOUT</a></li>
+                                    <li class="menu__item"><a href="#">THE TEAM</a></li>
+                                    <li class="menu__item"><a href="#">JOBS</a></li>
+                                    <li class="menu__item"><a href="#">CONTACT</a></li>
+                                </ul>
+                                <ul class="social">
+                                    <li class="social__item fb"><a href="#"></a></li>
+                                    <li class="social__item tw"><a href="#"></a></li>
+                                    <li class="social__item inst"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                            <div class="footerinvisible">
+                                <a class="first" href="#">© 2020 LeagiON. All rights reserved. Designed by Webcapitan</a>
+                                <a class="second" href="#">Terms of Use Privacy Policy</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
